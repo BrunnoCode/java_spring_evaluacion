@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Clientes y Productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Gestión de Clientes y Productos</h1>
+
+<!-- Sección para Clientes -->
+<section id="clientes-section">
+    <h2>Clientes</h2>
+
+    <!-- Formulario para buscar cliente por ID -->
+    <form id="buscar-cliente-form">
+        <label for="cliente-id"></label><input type="number" id="cliente-id" placeholder="ID del Cliente" required>
+        <button type="submit">Buscar Cliente</button>
+    </form>
+
+    <!-- Listado de clientes -->
+    <div id="clientes-list"></div>
+
+    <!-- Formulario para agregar cliente -->
+    <h3>Agregar Cliente</h3>
+    <form id="cliente-form">
+        <label for="cliente-name"></label><input type="text" id="cliente-name" placeholder="Nombre" required>
+        <label for="cliente-contact"></label><input type="text" id="cliente-contact" placeholder="Contacto" required>
+        <button type="submit">Agregar Cliente</button>
+    </form>
+
+    <!-- Formulario para actualizar cliente -->
+    <h3>Actualizar Cliente</h3>
+    <form id="cliente-update-form">
+        <label for="update-cliente-id">ID del Cliente</label>
+        <input type="number" id="update-cliente-id" placeholder="ID del Cliente" required>
+        <label for="update-cliente-name">Nombre</label>
+        <input type="text" id="update-cliente-name" placeholder="Nombre" required>
+        <label for="update-cliente-contact">Contacto</label>
+        <input type="text" id="update-cliente-contact" placeholder="Contacto" required>
+        <button type="submit">Actualizar Cliente</button>
+    </form>
+</section>
+
+<!-- Sección para Productos -->
+<section id="productos-section">
+    <h2>Productos</h2>
+
+    <!-- Formulario para buscar producto por ID -->
+    <form id="buscar-producto-form">
+        <label for="producto-id"></label><input type="number" id="producto-id" placeholder="ID del Producto" required>
+        <button type="submit">Buscar Producto</button>
+    </form>
+
+    <!-- Listado de productos -->
+    <div id="productos-list"></div>
+
+    <!-- Formulario para agregar producto -->
+    <h3>Agregar Producto</h3>
+    <form id="producto-form">
+        <label for="producto-name"></label><input type="text" id="producto-name" placeholder="Nombre" required>
+        <label for="producto-price"></label><input type="number" step="0.01" id="producto-price" placeholder="Precio" required>
+        <button type="submit">Agregar Producto</button>
+    </form>
+
+    <!-- Formulario para actualizar producto -->
+    <h3>Actualizar Producto</h3>
+    <form id="producto-update-form">
+        <label for="update-producto-id">ID del Producto</label>
+        <input type="number" id="update-producto-id" placeholder="ID del Producto" required>
+        <label for="update-producto-name">Nombre</label>
+        <input type="text" id="update-producto-name" placeholder="Nombre" required>
+        <label for="update-producto-price">Precio</label>
+        <input type="number" step="0.01" id="update-producto-price" placeholder="Precio" required>
+        <button type="submit">Actualizar Producto</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
